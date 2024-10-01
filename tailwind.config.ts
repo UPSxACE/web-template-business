@@ -13,6 +13,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "t-black": "#121212",
+        "t-gray": "#f0f0f0",
       },
       borderRadius: {
         lg: "var(--radius)",
