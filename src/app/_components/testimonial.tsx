@@ -19,9 +19,9 @@ export default function Testimonial() {
     <HomeSection
       index={5}
       id="testimonial"
-      className="bg-white max-xl:min-h-screen xl:aspect-[16/7] flex justify-center px-4"
+      className="bg-white flex justify-center px-4"
     >
-      <div className="w-full max-w-screen-xl pt-0 flex flex-col items-center justify-center">
+      <div className="w-full max-w-screen-xl py-20 flex flex-col items-center justify-center">
         <h1 className="text-5xl font-bold text-center">
           What our customers say
         </h1>

@@ -7,10 +7,10 @@ export default function AboutUs() {
     <HomeSection
       index={1}
       id="about-us"
-      top={"1rem"}
-      className="bg-white max-xl:min-h-screen xl:aspect-video flex justify-center px-4"
+      top={"2.5rem"}
+      className="bg-white flex justify-center px-4"
     >
-      <div className="w-full max-w-screen-xl py-32 grid grid-cols-[36%_auto] gap-8 items-center">
+      <div className="w-full aspect-[16/9] max-w-screen-xl mt-20 py-20 grid grid-cols-[36%_auto] gap-8 items-center">
         <figure className="w-full h-full px-8 pt-8 relative max-h-[44rem]">
           <div className="absolute border-8 border-solid border-yellow-300 w-full h-64 top-0 left-0"></div>
           <div className="relative w-full h-full max-h-[40rem]">

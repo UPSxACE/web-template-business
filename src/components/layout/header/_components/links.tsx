@@ -56,7 +56,7 @@ export default function Links() {
   const { scrollYProgress: scrollYProgress3 } = useScroll({
     // container: container,
     target: refs[3],
-    offset: ["start end", "-90% start"],
+    offset: ["start end", "-25% start"],
     layoutEffect: false,
   });
   useMotionValueEvent(scrollYProgress3, "change", (latest) => {

@@ -12,9 +12,9 @@ export default function OurTeam() {
     <HomeSection
       index={4}
       id="our-team"
-      className="bg-white max-xl:min-h-screen flex justify-center px-4"
+      className="bg-white flex justify-center px-4"
     >
-      <div className="w-full max-w-screen-xl py-32 pt-0">
+      <div className="w-full py-20 max-w-screen-xl">
         <article className="flex flex-col gap-16">
           <h1 className="text-center text-5xl font-bold">Our Awesome Team</h1>
           <ul className="flex gap-12 justify-around flex-wrap">

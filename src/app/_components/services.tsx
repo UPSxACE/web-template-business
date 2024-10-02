@@ -12,11 +12,11 @@ export default function Services() {
   return (
     <HomeSection
       index={2}
-      top={"-1rem"}
+      // top={"-1rem"}
       id="services"
-      className="bg-white max-xl:min-h-screen xl:aspect-video flex justify-center px-4"
+      className="bg-white flex justify-center px-4"
     >
-      <div className="w-full max-w-screen-xl py-32 pt-0 flex justify-evenly items-center gap-6">
+      <div className="w-full max-w-screen-xl py-20 flex justify-evenly items-center gap-6">
         <article className="flex justify-start">
           <div className="w-full flex flex-col justify-center text-lg max-w-[44rem] gap-6">
             <div>

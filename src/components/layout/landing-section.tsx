@@ -30,7 +30,7 @@ export default function HomeSection({
       <div
         id={id}
         style={{ top: top }}
-        className={twJoin("relative block invisible", !top && "-top-[80px]")}
+        className={twJoin("relative block invisible", !top && "-top-[5rem]")}
       />
       {children}
     </section>

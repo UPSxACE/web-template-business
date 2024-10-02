@@ -15,13 +15,13 @@ export default function Contact() {
   if (!refs) throw new Error("refs is null");
 
   return (
-    <section className="bg-white max-xl:min-h-screen xl:aspect-video flex justify-center px-4">
+    <section className="bg-white flex justify-center px-4">
       <div
         id="contact"
         style={{ top: "1rem" }}
         className={twJoin("relative block invisible")}
       />
-      <div className="w-full max-w-screen-xl py-4 flex justify-evenly gap-6 xl:gap-0 items-center">
+      <div className="w-full max-w-screen-xl py-20 mb-20 flex justify-evenly gap-6 xl:gap-0 items-center">
         <form
           onSubmit={(e) => e.preventDefault()}
           className="basis-1/2 grid grid-cols-2 gap-8 max-w-[32rem]"

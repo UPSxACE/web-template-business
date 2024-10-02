@@ -8,9 +8,9 @@ export default function SuccessStory() {
     <HomeSection
       index={3}
       id="success-story"
-      className="bg-white max-xl:min-h-screen xl:aspect-[16/5] flex justify-center px-4"
+      className="bg-white flex justify-center px-4"
     >
-      <div className="w-full max-w-screen-xl py-32 pt-0 items-center gap-6 grid grid-cols-[auto_40%]">
+      <div className="w-full max-w-screen-xl py-20 items-center gap-6 grid grid-cols-[auto_40%]">
         <figure className="h-full py-12 px-12 relative">
           <div className="absolute h-36 w-24 bg-yellow-200 left-[2.25rem] top-[2.25rem]" />
           <Image
