@@ -23,7 +23,7 @@ export default function Contact() {
           "relative block invisible top-[1rem] max-lg:!-top-[2.5rem]"
         )}
       />
-      <div className="w-full max-w-screen-xl py-20 mb-20 max-lg:mb-10 max-lg:py-10 flex lg:justify-evenly gap-6 xl:gap-0 items-center">
+      <div className="w-full max-w-screen-xl py-20 mb-20 max-lg:mb-10 max-lg:py-10 2xl:mb-32 2xl:py-32 flex lg:justify-evenly gap-6 xl:gap-0 items-center">
         <form
           onSubmit={(e) => e.preventDefault()}
           className="basis-full lg:basis-1/2 grid grid-cols-2 gap-6  lg:gap-8 lg:max-w-[32rem]"

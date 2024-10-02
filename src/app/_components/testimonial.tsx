@@ -21,7 +21,7 @@ export default function Testimonial() {
       id="testimonial"
       className="bg-white flex justify-center px-4 sm:px-8"
     >
-      <div className="w-full max-w-screen-xl py-20 max-lg:py-10 flex flex-col items-center justify-center">
+      <div className="w-full max-w-screen-xl py-20 max-lg:py-10 2xl:py-32 flex flex-col items-center justify-center">
         <h1 className="text-3xl lg:text-5xl font-bold text-center">
           What our customers say
         </h1>

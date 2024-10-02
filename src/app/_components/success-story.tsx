@@ -10,7 +10,7 @@ export default function SuccessStory() {
       id="success-story"
       className="bg-white flex justify-center px-4 sm:px-8"
     >
-      <div className="w-full max-w-screen-xl py-20 max-lg:py-10 items-center gap-6 grid grid-cols-1 lg:grid-cols-[auto_40%]">
+      <div className="w-full max-w-screen-xl py-20 max-lg:py-10 2xl:py-32 items-center gap-6 grid grid-cols-1 lg:grid-cols-[auto_40%]">
         <figure className="max-lg:hidden h-full py-12 px-12 relative">
           <div className="absolute h-36 w-24 bg-yellow-200 left-[2.25rem] top-[2.25rem]" />
           <Image
