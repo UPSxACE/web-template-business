@@ -151,7 +151,7 @@ export default function Links() {
               key={i}
               href={x.id}
               className={twMerge(
-                "px-1 py-3 block relative group font-semibold",
+                "px-1 py-3 block relative group font-medium",
                 calculatedActive === i ? "text-black" : "text-zinc-500"
               )}
               onClick={() => {

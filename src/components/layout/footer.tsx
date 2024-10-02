@@ -25,12 +25,12 @@ export default function Footer() {
           <div className="flex flex-col gap-4 w-full lg:max-w-72 lg:w-fit max-lg:items-center max-lg:text-center">
             <span className="text-2xl font-bold">Company</span>
             <ul className="text-2xl space-y-4">
-              <li className="flex gap-3 items-center justify-center">
+              <li className="flex gap-3 items-center max-lg:justify-center">
                 <Link href="/#home" className="text-base max-lg:text-center">
                   Home
                 </Link>
               </li>
-              <li className="flex gap-3 items-center justify-center">
+              <li className="flex gap-3 items-center max-lg:justify-center">
                 <Link
                   href="/#about-us"
                   className="text-base max-lg:text-center"
@@ -38,7 +38,7 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
-              <li className="flex gap-3 items-center justify-center">
+              <li className="flex gap-3 items-center max-lg:justify-center">
                 <Link
                   href="/#services"
                   className="text-base max-lg:text-center"
@@ -46,7 +46,7 @@ export default function Footer() {
                   Services
                 </Link>
               </li>
-              <li className="flex gap-3 items-center justify-center">
+              <li className="flex gap-3 items-center max-lg:justify-center">
                 <Link href="/#contact" className="text-base max-lg:text-center">
                   Contact Us
                 </Link>
