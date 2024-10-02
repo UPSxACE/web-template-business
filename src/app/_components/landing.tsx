@@ -10,6 +10,7 @@ export default function Landing() {
       index={0}
       id="home"
       className="bg-t-black text-white min-h-landing flex justify-center px-4 sm:px-8"
+      anchorClassname="-top-[5rem] max-lg:!-top-[2.5rem]"
     >
       <div className="w-full max-w-screen-xl py-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <article className="flex flex-col justify-center gap-8">
