@@ -3,10 +3,18 @@
 import { LightButton } from "@/components/ui/light-button";
 import { AnchorContext } from "@/providers/anchor-provider";
 import { useMotionValueEvent, useScroll } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
-import { useContext, useEffect, useRef, useState } from "react";
+import {
+  MouseEventHandler,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { twMerge } from "tailwind-merge";
+import logoSvg from "../../../../../public/logo.svg";
 
 export default function Links() {
   const [progress, setProgress] = useState([0, 0, 0, 0, 0, 0]);
@@ -120,6 +128,11 @@ export default function Links() {
 
   return (
     <>
+      <Logo
+        onClick={() => {
+          setMobileOpen(false);
+        }}
+      />
       <nav className="hidden lg:flex gap-3 flex-wrap justify-center relative">
         <div
           style={{
@@ -189,6 +202,14 @@ export default function Links() {
         )}
       </nav>
     </>
+  );
+}
+
+function Logo({ onClick }: { onClick: MouseEventHandler<HTMLAnchorElement> }) {
+  return (
+    <Link href="/" className="mr-auto" onClick={onClick}>
+      <Image src={logoSvg} alt="logo" height={28} className="max-w-none" />
+    </Link>
   );
 }
 
