@@ -14,7 +14,7 @@ export default function Landing() {
     >
       <div className="w-full max-w-screen-xl py-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <article className="flex flex-col justify-center gap-8">
-          <h1 className="text-3xl lg:text-6xl leading-tight">
+          <h1 className="text-3xl lg:text-6xl !leading-[1.3]">
             Authentic content for
             <br /> your <mark className="px-2 bg-yellow-300">social media</mark>
             <br /> presence?
