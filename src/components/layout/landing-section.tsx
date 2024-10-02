@@ -32,7 +32,7 @@ export default function HomeSection({
         className={twJoin(
           "relative block invisible",
           !anchorClassname
-            ? "-top-[5rem] max-lg:-top-[2.5rem]"
+            ? "-top-[5rem] max-lg:!-top-[2.5rem] 2xl:top-[2.5rem]"
             : anchorClassname
         )}
       />

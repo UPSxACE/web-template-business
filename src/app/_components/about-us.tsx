@@ -7,7 +7,7 @@ export default function AboutUs() {
     <HomeSection
       index={1}
       id="about-us"
-      anchorClassname={"top-[2.5rem] max-lg:!top-0"}
+      anchorClassname={"top-[2.5rem] max-lg:!top-0 2xl:top-[5rem]"}
       className="bg-white flex justify-center px-4 sm:px-8"
     >
       <div className="w-full lg:aspect-[16/9] max-w-screen-xl mt-20 py-20 max-lg:mt-10 max-lg:py-10 2xl:mt-32 2xl:py-32 grid grid-cols-1 lg:grid-cols-[36%_auto] gap-8 items-center">
