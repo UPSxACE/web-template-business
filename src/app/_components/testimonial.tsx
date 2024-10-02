@@ -19,15 +19,15 @@ export default function Testimonial() {
     <HomeSection
       index={5}
       id="testimonial"
-      className="bg-white flex justify-center px-4"
+      className="bg-white flex justify-center px-4 sm:px-8"
     >
       <div className="w-full max-w-screen-xl py-20 flex flex-col items-center justify-center">
-        <h1 className="text-5xl font-bold text-center">
+        <h1 className="text-3xl lg:text-5xl font-bold text-center">
           What our customers say
         </h1>
         <Carousel
           setApi={state.setApi}
-          className="mt-28 w-full max-w-[56rem]"
+          className="mt-14 lg:mt-28 w-full max-w-[56rem]"
           opts={{ loop: true }}
         >
           <CarouselContent>
@@ -35,7 +35,7 @@ export default function Testimonial() {
               <div className="bg-blue-300 w-20 h-20 rounded-full relative">
                 <Image src={avatar1} fill alt="testimony" />
               </div>
-              <p className="mt-3 h-28 text-center text-lg max-w-[40rem] flex items-center line-clamp-4 text-zinc-600">
+              <p className="mt-3 h-40 lg:h-28 text-center text-sm lg:text-lg max-w-[40rem] line-clamp-[8] lg:line-clamp-4 text-zinc-600">
                 Quantic is the friendliest and most efficient company I have
                 ever worked with. The whole thing of finding a product takes
                 time, and they helped us filter only the best opportunities that
@@ -43,10 +43,10 @@ export default function Testimonial() {
                 great product identity for your company.
               </p>
               <div className="flex flex-col items-center">
-                <span className="text-center mb-1 text-xl font-bold">
+                <span className="text-center mb-1 text-lg lg:text-xl font-bold">
                   Shalima Hayden
                 </span>
-                <span className="text-center mb-1 text-zinc-700">
+                <span className="text-center mb-1 max-lg:text-sm text-zinc-700">
                   Product Designer
                 </span>
               </div>
@@ -55,7 +55,7 @@ export default function Testimonial() {
               <div className="bg-blue-300 w-20 h-20 rounded-full relative">
                 <Image src={avatar1} fill alt="testimony" />
               </div>
-              <p className="mt-3 h-28 text-center text-lg max-w-[40rem] flex items-center line-clamp-4 text-zinc-600">
+              <p className="mt-3 h-40 lg:h-28 text-center text-sm lg:text-lg max-w-[40rem] line-clamp-[8] lg:line-clamp-4 text-zinc-600">
                 Quantic is the friendliest and most efficient company I have
                 ever worked with. The whole thing of finding a product takes
                 time, and they helped us filter only the best opportunities that
@@ -63,10 +63,10 @@ export default function Testimonial() {
                 great product identity for your company.
               </p>
               <div className="flex flex-col items-center">
-                <span className="text-center mb-1 text-xl font-bold">
+                <span className="text-center mb-1 text-lg lg:text-xl font-bold">
                   Shalima Hayden
                 </span>
-                <span className="text-center mb-1 text-zinc-700">
+                <span className="text-center mb-1 max-lg:text-sm text-zinc-700">
                   Product Designer
                 </span>
               </div>
@@ -75,7 +75,7 @@ export default function Testimonial() {
               <div className="bg-blue-300 w-20 h-20 rounded-full relative">
                 <Image src={avatar1} fill alt="testimony" />
               </div>
-              <p className="mt-3 h-28 text-center text-lg max-w-[40rem] flex items-center line-clamp-4 text-zinc-600">
+              <p className="mt-3 h-40 lg:h-28 text-center text-sm lg:text-lg max-w-[40rem] line-clamp-[8] lg:line-clamp-4 text-zinc-600">
                 Quantic is the friendliest and most efficient company I have
                 ever worked with. The whole thing of finding a product takes
                 time, and they helped us filter only the best opportunities that
@@ -83,10 +83,10 @@ export default function Testimonial() {
                 great product identity for your company.
               </p>
               <div className="flex flex-col items-center">
-                <span className="text-center mb-1 text-xl font-bold">
+                <span className="text-center mb-1 text-lg lg:text-xl font-bold">
                   Shalima Hayden
                 </span>
-                <span className="text-center mb-1 text-zinc-700">
+                <span className="text-center mb-1 max-lg:text-sm text-zinc-700">
                   Product Designer
                 </span>
               </div>

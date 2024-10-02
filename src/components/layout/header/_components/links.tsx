@@ -1,9 +1,11 @@
 "use client";
 
+import { LightButton } from "@/components/ui/light-button";
 import { AnchorContext } from "@/providers/anchor-provider";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import Link from "next/link";
 import { useContext, useEffect, useRef, useState } from "react";
+import { IoClose, IoMenu } from "react-icons/io5";
 import { twMerge } from "tailwind-merge";
 
 export default function Links() {
@@ -113,38 +115,80 @@ export default function Links() {
   const tabsRef = useRef<(HTMLAnchorElement | null)[]>([]);
   const currentTab = tabsRef?.current?.[calculatedActive];
 
-  return (
-    <nav className="flex gap-3 flex-wrap justify-center relative">
-      <div
-        style={{
-          width: currentTab ? currentTab?.clientWidth : 0,
-          left: currentTab ? currentTab?.offsetLeft : 0,
-        }}
-        className="absolute bg-t-black w-full h-1 bottom-0 transition-all duration-300 z-10"
-      />
+  // mobile
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-      {links.map((x, i) => {
-        return (
-          <Link
-            ref={(el) => {
-              tabsRef.current[i] = el;
-            }}
-            key={i}
-            href={x.id}
-            className={twMerge(
-              "px-1 py-3 block relative group font-semibold",
-              calculatedActive === i ? "text-black" : "text-zinc-500"
-            )}
-            onClick={() => {
-              setForcedTarget(i);
-            }}
-          >
-            {x.title}
-            <div className="absolute bg-gray-300 w-full h-1 bottom-0 left-0 opacity-0 group-hover:opacity-100 transition-all duration-200" />
-          </Link>
-        );
-      })}
-    </nav>
+  return (
+    <>
+      <nav className="hidden lg:flex gap-3 flex-wrap justify-center relative">
+        <div
+          style={{
+            width: currentTab ? currentTab?.clientWidth : 0,
+            left: currentTab ? currentTab?.offsetLeft : 0,
+          }}
+          className="absolute bg-t-black w-full h-1 bottom-0 transition-all duration-300 z-10"
+        />
+
+        {links.map((x, i) => {
+          return (
+            <Link
+              ref={(el) => {
+                tabsRef.current[i] = el;
+              }}
+              key={i}
+              href={x.id}
+              className={twMerge(
+                "px-1 py-3 block relative group font-semibold",
+                calculatedActive === i ? "text-black" : "text-zinc-500"
+              )}
+              onClick={() => {
+                setForcedTarget(i);
+              }}
+            >
+              {x.title}
+              <div className="absolute bg-gray-300 w-full h-1 bottom-0 left-0 opacity-0 group-hover:opacity-100 transition-all duration-200" />
+            </Link>
+          );
+        })}
+      </nav>
+      <nav className="flex lg:hidden">
+        <LightButton
+          onClick={() => setMobileOpen((v) => !v)}
+          variant="ghost"
+          className={`h-14 w-14 bg-white rounded-full ml-auto flex items-center p-2 text-5xl`}
+        >
+          {mobileOpen ? <IoClose /> : <IoMenu />}
+        </LightButton>
+        {mobileOpen && (
+          <ul className="pl-4 py-4 border-t border-solid border-gray-300 fixed top-[5rem] left-0 h-landing w-svw bg-white text-lg">
+            {[...links, { id: "#contact", title: "Contact" }].map((x, i) => {
+              return (
+                <li key={i}>
+                  <Link
+                    ref={(el) => {
+                      tabsRef.current[i] = el;
+                    }}
+                    href={x.id}
+                    className={twMerge(
+                      "block py-2 relative group",
+                      calculatedActive === i
+                        ? "text-black font-bold"
+                        : "text-zinc-500 hover:text-black transition-colors duration-300"
+                    )}
+                    onClick={() => {
+                      setMobileOpen(false);
+                      setForcedTarget(i);
+                    }}
+                  >
+                    {x.title}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </nav>
+    </>
   );
 }
 

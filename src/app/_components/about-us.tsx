@@ -8,10 +8,10 @@ export default function AboutUs() {
       index={1}
       id="about-us"
       top={"2.5rem"}
-      className="bg-white flex justify-center px-4"
+      className="bg-white flex justify-center px-4 sm:px-8"
     >
-      <div className="w-full aspect-[16/9] max-w-screen-xl mt-20 py-20 grid grid-cols-[36%_auto] gap-8 items-center">
-        <figure className="w-full h-full px-8 pt-8 relative max-h-[44rem]">
+      <div className="w-full aspect-[16/9] max-w-screen-xl mt-20 py-20 grid grid-cols-1 lg:grid-cols-[36%_auto] gap-8 items-center">
+        <figure className="max-lg:hidden w-full h-full px-8 pt-8 relative max-h-[44rem]">
           <div className="absolute border-8 border-solid border-yellow-300 w-full h-64 top-0 left-0"></div>
           <div className="relative w-full h-full max-h-[40rem]">
             <Image
@@ -23,10 +23,10 @@ export default function AboutUs() {
           </div>
         </figure>
         <article className="flex justify-center">
-          <div className="w-full flex flex-col justify-center text-lg max-w-[44rem] gap-6">
+          <div className="w-full flex flex-col justify-center lg:text-lg lg:max-w-[44rem] gap-6">
             <div>
-              <h1 className="text-5xl font-bold">About us</h1>
-              <div className="h-[2px] bg-zinc-500 w-28 mt-2 opacity-30" />
+              <h1 className="text-3xl lg:text-5xl font-bold">About us</h1>
+              <div className="h-[2px] bg-zinc-500 w-14 lg:w-28 mt-2 opacity-30" />
             </div>
             <p>
               <strong>Quantic</strong> is a Quantic is a template social agency

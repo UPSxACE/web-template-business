@@ -8,10 +8,10 @@ export default function SuccessStory() {
     <HomeSection
       index={3}
       id="success-story"
-      className="bg-white flex justify-center px-4"
+      className="bg-white flex justify-center px-4 sm:px-8"
     >
-      <div className="w-full max-w-screen-xl py-20 items-center gap-6 grid grid-cols-[auto_40%]">
-        <figure className="h-full py-12 px-12 relative">
+      <div className="w-full max-w-screen-xl py-20 items-center gap-6 grid grid-cols-1 lg:grid-cols-[auto_40%]">
+        <figure className="max-lg:hidden h-full py-12 px-12 relative">
           <div className="absolute h-36 w-24 bg-yellow-200 left-[2.25rem] top-[2.25rem]" />
           <Image
             src={dots}
@@ -29,25 +29,27 @@ export default function SuccessStory() {
         </figure>
         <article className="h-full py-12 flex flex-col gap-7 justify-center">
           <div>
-            <h1 className="text-5xl font-bold">Our success story</h1>
-            <div className="h-[2px] bg-zinc-500 w-28 mt-2 opacity-30" />
+            <h1 className="text-3xl lg:text-5xl font-bold">
+              Our success story
+            </h1>
+            <div className="h-[2px] bg-zinc-500 w-14 lg:w-28 mt-2 opacity-30" />
           </div>
-          <p className="text-lg text-zinc-500">
+          <p className="lg:text-lg text-zinc-500">
             Develop a website by finding a product identity that has real value
             for your company.
           </p>
           <ul className="flex gap-7 flex-wrap justify-between">
             <li className="flex flex-col gap-1">
-              <span className="text-5xl font-bold">1000</span>
-              <span className="font-bold text-lg">Projects Complete</span>
+              <span className="text-3xl lg:text-5xl font-bold">1000</span>
+              <span className="font-bold lg:text-lg">Projects Complete</span>
             </li>
             <li className="flex flex-col gap-1">
-              <span className="text-5xl font-bold">2350</span>
-              <span className="font-bold text-lg">Products Sold</span>
+              <span className="text-3xl lg:text-5xl font-bold">2350</span>
+              <span className="font-bold lg:text-lg">Products Sold</span>
             </li>
             <li className="flex flex-col gap-1">
-              <span className="text-5xl font-bold">1100</span>
-              <span className="font-bold text-lg">Future Milestones</span>
+              <span className="text-3xl lg:text-5xl font-bold">1100</span>
+              <span className="font-bold lg:text-lg">Future Milestones</span>
             </li>
           </ul>
         </article>

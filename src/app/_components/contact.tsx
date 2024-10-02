@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { AnchorContext } from "@/providers/anchor-provider";
 import Image from "next/image";
 import { useContext } from "react";
@@ -7,7 +8,6 @@ import { MdOutlineLocationOn } from "react-icons/md";
 import { twJoin } from "tailwind-merge";
 import dots from "../../../public/dots.svg";
 import office3 from "../../../public/office3.png";
-import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   const refs = useContext(AnchorContext);
@@ -15,26 +15,28 @@ export default function Contact() {
   if (!refs) throw new Error("refs is null");
 
   return (
-    <section className="bg-white flex justify-center px-4">
+    <section className="bg-white flex justify-center px-4 sm:px-8">
       <div
         id="contact"
         style={{ top: "1rem" }}
         className={twJoin("relative block invisible")}
       />
-      <div className="w-full max-w-screen-xl py-20 mb-20 flex justify-evenly gap-6 xl:gap-0 items-center">
+      <div className="w-full max-w-screen-xl py-20 mb-20 flex lg:justify-evenly gap-6 xl:gap-0 items-center">
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="basis-1/2 grid grid-cols-2 gap-8 max-w-[32rem]"
+          className="basis-full lg:basis-1/2 grid grid-cols-2 gap-6  lg:gap-8 lg:max-w-[32rem]"
         >
-          <h1 className="text-5xl font-bold col-span-2 mb-3">Get in touch</h1>
-          <fieldset className="flex flex-col">
+          <h1 className="text-3xl lg:text-5xl font-bold col-span-2 mb-0 lg:mb-3">
+            Get in touch
+          </h1>
+          <fieldset className="flex flex-col max-lg:col-span-2">
             <label className="text-zinc-500">First Name</label>
             <input
               className="mt-2 bg-gray-100 p-4 px-5 rounded-md"
               placeholder="Enter your first name"
             ></input>
           </fieldset>
-          <fieldset className="flex flex-col">
+          <fieldset className="flex flex-col max-lg:col-span-2">
             <label className="text-zinc-500">Last Name</label>
             <input
               className="mt-2 bg-gray-100 p-4 px-5 rounded-md"
@@ -61,7 +63,7 @@ export default function Contact() {
             SEND
           </Button>
         </form>
-        <div className="basis-1/2 aspect-video pl-14 mt-14 relative">
+        <div className="max-lg:hidden basis-1/2 aspect-video pl-14 mt-14 relative">
           <Image
             src={dots}
             alt="dots"

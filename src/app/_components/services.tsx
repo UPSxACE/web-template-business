@@ -14,65 +14,73 @@ export default function Services() {
       index={2}
       // top={"-1rem"}
       id="services"
-      className="bg-white flex justify-center px-4"
+      className="bg-white flex justify-center px-4 sm:px-8"
     >
-      <div className="w-full max-w-screen-xl py-20 flex justify-evenly items-center gap-6">
+      <div className="w-full max-w-screen-xl py-20 flex lg:justify-evenly items-center gap-6">
         <article className="flex justify-start">
-          <div className="w-full flex flex-col justify-center text-lg max-w-[44rem] gap-6">
+          <div className="w-full flex flex-col justify-center lg:text-lg max-w-[44rem] gap-4 lg:gap-6">
             <div>
-              <h1 className="text-5xl font-bold">Service we provide</h1>
-              <div className="h-[2px] bg-zinc-500 w-28 mt-2 opacity-30" />
+              <h1 className="text-3xl lg:text-5xl font-bold">
+                Service we provide
+              </h1>
+              <div className="h-[2px] bg-zinc-500 w-14 lg:w-28 mt-2 opacity-30" />
             </div>
             <p className="text-zinc-500">
               We will solve a client&apos;s problems to improve their social
               media peformance
             </p>
-            <ul className="space-y-6 max-w-[32rem]">
-              <li className="flex gap-5">
-                <div className="flex justify-center items-center bg-t-gray rounded-lg w-12 h-12 shrink-0 text-2xl pt-1">
+            <ul className="space-y-4 lg:space-y-6 max-w-[32rem]">
+              <li className="flex gap-3 lg:gap-5">
+                <div className="flex justify-center items-center bg-t-gray rounded-lg w-10 h-10 lg:w-12 lg:h-12 shrink-0 text-xl lg:text-2xl pt-1">
                   <BiTrendingUp />
                 </div>
                 <div>
-                  <h2 className="font-bold text-xl">Performance Marketing</h2>
-                  <p className="text-zinc-600 text-base">
+                  <h2 className="font-bold text-lg lg:text-xl">
+                    Performance Marketing
+                  </h2>
+                  <p className="text-zinc-600 text-sm lg:text-base">
                     Help create a website and redesign it so that it becomes a
                     website that is more trendy and looks fresh.
                   </p>
                 </div>
               </li>
-              <li className="flex gap-5">
-                <div className="flex justify-center items-center bg-t-gray rounded-lg w-12 h-12 shrink-0 text-2xl pt-1">
+              <li className="flex gap-3 lg:gap-5">
+                <div className="flex justify-center items-center bg-t-gray rounded-lg w-10 h-10 lg:w-12 lg:h-12 shrink-0 text-xl lg:text-2xl pt-1">
                   <BiMessageCheck />
                 </div>
                 <div>
-                  <h2 className="font-bold text-xl">
+                  <h2 className="font-bold text-lg lg:text-xl">
                     Feed Management E-Commerce
                   </h2>
-                  <p className="text-zinc-600 text-base">
+                  <p className="text-zinc-600 text-sm lg:text-base">
                     Create customizable illustrations with attractive designs
                     that are made visually through high creativity.
                   </p>
                 </div>
               </li>
-              <li className="flex gap-5">
-                <div className="flex justify-center items-center bg-t-gray rounded-lg w-12 h-12 shrink-0 text-2xl">
+              <li className="flex gap-3 lg:gap-5">
+                <div className="flex justify-center items-center bg-t-gray rounded-lg w-10 h-10 lg:w-12 lg:h-12 shrink-0 text-2xl">
                   <BiSolidVideos />
                 </div>
                 <div>
-                  <h2 className="font-bold text-xl">Content Production</h2>
-                  <p className="text-zinc-600 text-base">
+                  <h2 className="font-bold text-lg lg:text-xl">
+                    Content Production
+                  </h2>
+                  <p className="text-zinc-600 text-sm lg:text-base">
                     Make the appearance of a mobile application that has quality
                     and increases user convenience.
                   </p>
                 </div>
               </li>
-              <li className="flex gap-5">
-                <div className="flex justify-center items-center bg-t-gray rounded-lg w-12 h-12 shrink-0 text-xl">
+              <li className="flex gap-3 lg:gap-5">
+                <div className="flex justify-center items-center bg-t-gray rounded-lg w-10 h-10 lg:w-12 lg:h-12 shrink-0 text-xl">
                   <BsMegaphone />
                 </div>
                 <div>
-                  <h2 className="font-bold text-xl">Influencer Marketing</h2>
-                  <p className="text-zinc-600 text-base">
+                  <h2 className="font-bold text-lg lg:text-xl">
+                    Influencer Marketing
+                  </h2>
+                  <p className="text-zinc-600 text-sm lg:text-base">
                     Create customizable illustrations with attractive designs
                     that are made visually through high creativity.
                   </p>
@@ -81,7 +89,7 @@ export default function Services() {
             </ul>
           </div>
         </article>
-        <figure className="aspect-[1.75/2] h-[90%] relative max-h-[44rem] pl-12">
+        <figure className="max-lg:hidden aspect-[1.75/2] h-[90%] relative max-h-[44rem] pl-12">
           <Image
             src={dots}
             alt="dots"
