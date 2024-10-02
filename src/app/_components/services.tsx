@@ -16,7 +16,7 @@ export default function Services() {
       id="services"
       className="bg-white flex justify-center px-4 sm:px-8"
     >
-      <div className="w-full max-w-screen-xl py-20 flex lg:justify-evenly items-center gap-6">
+      <div className="w-full max-w-screen-xl py-20 max-lg:py-10 flex lg:justify-evenly items-center gap-6">
         <article className="flex justify-start">
           <div className="w-full flex flex-col justify-center lg:text-lg max-w-[44rem] gap-4 lg:gap-6">
             <div>

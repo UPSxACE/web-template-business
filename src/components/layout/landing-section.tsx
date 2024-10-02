@@ -6,13 +6,13 @@ import { twJoin } from "tailwind-merge";
 
 type Props = {
   index: number;
-  top?: string | number;
+  anchorClassname?: string;
 } & ComponentProps<"section">;
 
 export default function HomeSection({
   id,
   index,
-  top,
+  anchorClassname,
   children,
   ...props
 }: Props) {
@@ -29,8 +29,12 @@ export default function HomeSection({
     >
       <div
         id={id}
-        style={{ top: top }}
-        className={twJoin("relative block invisible", !top && "-top-[5rem]")}
+        className={twJoin(
+          "relative block invisible",
+          !anchorClassname
+            ? "-top-[5rem] max-lg:-top-[2.5rem]"
+            : anchorClassname
+        )}
       />
       {children}
     </section>

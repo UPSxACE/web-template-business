@@ -14,7 +14,7 @@ export default function OurTeam() {
       id="our-team"
       className="bg-white flex justify-center px-4 sm:px-8"
     >
-      <div className="w-full py-20 max-w-screen-xl">
+      <div className="w-full py-20 max-lg:py-10 max-w-screen-xl">
         <article className="flex flex-col gap-10 lg:gap-16">
           <h1 className="text-center text-3xl lg:text-5xl font-bold">
             Our Awesome Team
